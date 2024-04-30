@@ -15,8 +15,11 @@
         theme: {
           extend: {
             colors: {
+
               bgButton: ' #e76f51',
               sliderbg: 'rgba(231, 111, 81, 0.1)',
+              ratingC:' #23a6f0',
+              
             }
           }
         }
@@ -46,7 +49,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                       </div>
                       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 poppins-medium">
-                        <li><a>Home</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank">Home</a></li>
                         <li><a>Shop</a></li>
                         <li><a>News</a></li>
                         <li><a>Contact</a></li>
@@ -56,7 +59,7 @@
                   </div>
                   <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 font-medium text-base">
-                        <li><a>Home</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank">Home</a></li>
                         <li><a>Shop</a></li>
                         <li><a>News</a></li>
                         <li><a>Contact</a></li>
@@ -151,20 +154,137 @@
     
   <main class="container mx-auto">
     <!-- feature -->
-    <section class="my-24">
+    <section class="my-24 mx-auto px-6">
       <h3 class="px-10 md:px-5 lg:px-5 text-2xl md:text-3xl lg:text-5xl font-semibold text-center">Fetured Bikes In This Year</h3>
-      <div class="p-12 md:p-5 lg:mt-16 md:mt-6  mt-6 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div class="p-12 md:p-5 lg:mt-16 md:mt-6  mt-6 grid justify-between gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div>
-          <img src="images/others/feature-bike.png" alt="" width="288px">
+          <img class="mx-auto" src="images/others/feature-bike.png" alt="" width="288px">
         </div>
         <div>
-          <img src="images/others/feature-bike.png" alt="">
+          <img class="mx-auto" src="images/others/feature-bike.png" alt="" width="288px">
         </div>
         <div>
-          <img src="images/others/feature-bike.png" alt="">
+          <img class="mx-auto" src="images/others/feature-bike.png" alt="" width="288px">
         </div>
       </div>
     </section>
+    <!-- latest News -->
+    <section class="my-24 mx-auto px-6">
+      <h3 class="px-10 md:px-5 lg:px-5 text-2xl md:text-3xl lg:text-5xl font-semibold text-center">latest News</h3>
+      <div class="lg:mt-16 md:mt-6 mt-6 grid justify-between gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+         <!-- 1st -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="images/others/latest1.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+          <div class="card-actions justify-start">
+            <button class="btn bg-bgButton text-white">Read More</button>
+          </div>
+        </div>
+      </div>
+               <!-- 2st -->
+               <div class="card bg-base-100 shadow-xl">
+                <figure><img src="images/others/latest2.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn bg-bgButton text-white">Read More</button>
+                  </div>
+                </div>
+              </div>
+
+                   <!-- 3st -->
+                   <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="images/others/latest3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn bg-bgButton text-white">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+
+      </div>
+    
+  </section>
+  <!-- team -->
+  <section class="my-24 mx-auton px-6">
+    <h3 class="px-10 md:px-5 lg:px-5 text-2xl md:text-3xl lg:text-5xl font-semibold text-center">Happy 
+      <span class="text-bgButton">Clients says</span></h3>
+    <div class="lg:mt-16 md:mt-6 mt-6 grid justify-between gap-11 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+       <!-- 1st -->
+       <div class="card bg-base-100 p-9 border-2 border-gray-300">
+        <figure><img class="w-36" src="images/others/user-1.png" alt="Shoes" /></figure>
+        <div class="card-body text-center space-y-4">
+          <p>Slate helps you see how 
+            many more days you need 
+            to work to reach your financial 
+            goal for the month and year.</p>
+            <div class="rating justify-center">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+            </div>
+          <div class="justify-center space-y-4">
+            <p class="text-ratingC">Regina Miles</p>
+            <h6>Banker</h6>
+          </div>
+        </div>
+      </div>
+
+   
+             <!-- 2st -->
+             <div class="card bg-base-100 p-9 border-2 border-gray-300">
+              <figure><img class="w-36" src="images/others/user-2.png" alt="Shoes" /></figure>
+              <div class="card-body text-center space-y-4">
+                <p>Slate helps you see how 
+                  many more days you need 
+                  to work to reach your financial 
+                  goal for the month and year.</p>
+                  <div class="rating justify-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                  </div>
+                <div class="justify-center space-y-4">
+                  <p class="text-ratingC">Regina Miles</p>
+                  <h6>Banker</h6>
+                </div>
+              </div>
+            </div>
+
+                 <!-- 3st -->
+                 <div class="card bg-base-100 p-9 border-2 border-gray-300">
+                  <figure><img class="w-36" src="images/others/user-3.png" alt="Shoes" /></figure>
+                  <div class="card-body text-center space-y-4">
+                    <p>Slate helps you see how 
+                      many more days you need 
+                      to work to reach your financial 
+                      goal for the month and year.</p>
+                      <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                      </div>
+                    <div class="justify-center space-y-4">
+                      <p class="text-ratingC">Regina Miles</p>
+                      <h6>Banker</h6>
+                    </div>
+                  </div>
+                </div>
+
+    </div>
+  
+</section>
   </main>
     <footer>
 
